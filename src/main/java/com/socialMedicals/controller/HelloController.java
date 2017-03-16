@@ -1,16 +1,17 @@
 package com.socialMedicals.controller;
 
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
-@RestController
+@Controller
 public class HelloController {
 
-    @RequestMapping("/hello")
+    @RequestMapping("/index")
     public String hello() {
-        return "Hello World!";
+        return "index";
     }
 }
 
