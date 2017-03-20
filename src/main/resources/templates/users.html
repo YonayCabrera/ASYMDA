@@ -11,11 +11,14 @@
 <h2>Sammu es un Pussy</h2>
 <div>
     <span th:text="${message}"></span>
-    <form action="/hello">
-        <input type="text" name="foo" value="foo"/>
-        <input type="submit"/>
-    </form>
 </div>
+<div>
+    <form action="#" th:action="@{/addUser}" th:object="${User}" method="post">
+        <input type="text" th:field="*{name}" />
+        <input type="text" th:field="*{surname}" />
+        <input type="submit" />
+    </form>
 
+</div>
 </body>
 </html>
